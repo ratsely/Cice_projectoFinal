@@ -1,6 +1,7 @@
 document.querySelector(".button").onclick = accesoHome;
-// document.querySelector('input[type="checkradio"]').onclick = mostrarPassword;
+document.querySelector('#bot-rad').onclick = mostrarPassword;
 
+// Valida el acceso a la página web sólo si coincide los valores de email y contraseña
 function accesoHome() {
     var email = document.querySelector("#email").value;
     var password = document.querySelector("#password").value;
@@ -8,6 +9,7 @@ function accesoHome() {
     return email == password ? console.log("Correcto") : console.log("Incorrecto");
 }
 
+// Oculta o muestra la contraseña como texto plano
 function mostrarPassword() {
     var password = document.querySelector("#password");
 

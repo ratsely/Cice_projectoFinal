@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="preload" href="css/registro.css" as="style">
-    <link rel="preload" href="js/registro.js" as="script">
+    <link rel="preload" href="css/login.css" as="style">
+    <link rel="preload" href="js/login.js" as="script">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="container mt-5">
@@ -22,10 +22,10 @@
                 <div class="form-group pb-2">
                     <label for="password">Contraseña</label>
                     <input type="password" class="form-control" id="password">
-                    <input type="checkbox" onclick="mostrarPassword()" class="mt-4 mx-3">Mostrar contraseña
+                    <input type="checkbox" id="bot-rad" class="mt-4 mx-3">Mostrar contraseña
                 </div>
                 <div>
-                    <p class="text-center"> <a href="#">¿No tienes una cuenta creada?</a></p>
+                    <p class="text-center"> <a href="registro.html">¿No tienes una cuenta creada?</a></p>
                 <input type="button" class=" button btn btn-primary mx-auto my-auto d-block" value="Acceder">
                 </div>
             </form>
@@ -33,6 +33,6 @@
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/registro.js"></script>
+    <script src="js/login.js"></script>
 </body>
 </html>
