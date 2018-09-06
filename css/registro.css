@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+form{
+    padding: 5em;
+    background: lightblue;
+}
+
+a{
+    color: blue;
+    font-weight: bold;
+}
