@@ -1,10 +1,19 @@
 document.querySelector(".button").onclick = accesoHome;
-$('#password').password('toggle');
+// document.querySelector('input[type="checkradio"]').onclick = mostrarPassword;
 
-    var email;
-
-function accesoHome(){
-    email = document.querySelector("#email").value;
+function accesoHome() {
+    var email = document.querySelector("#email").value;
     var password = document.querySelector("#password").value;
-    email == password ? console.log("Correcto"):console.log("Incorrecto");
+
+    return email == password ? console.log("Correcto") : console.log("Incorrecto");
+}
+
+function mostrarPassword() {
+    var password = document.querySelector("#password");
+
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
 }
