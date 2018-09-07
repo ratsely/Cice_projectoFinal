@@ -1,4 +1,13 @@
+
 document.querySelector("#registro").onclick = registrar;
+document.querySelector("#bot-rad").onclick = mostrarPassword;
+
+function mostrarPassword(){
+    var password = document.querySelector("#password");
+
+    return password.type === "password" ? password.type = "text" : password.type = "password";
+
+}
 
 function registrar() {
     let email = document.querySelector("#email").value;

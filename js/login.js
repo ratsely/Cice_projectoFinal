@@ -12,7 +12,7 @@ function accesoHome() {
 }
 
 // Oculta o muestra la contraseña como texto plano
-function mostrarPassword() {
+export function mostrarPassword() {
     var password = document.querySelector("#password");
 
     if (password.type === "password") {
