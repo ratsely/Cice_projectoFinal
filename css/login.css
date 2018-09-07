@@ -17,7 +17,7 @@ body{
 
 form{
     background: lightgrey;
-    padding: 5em;
+    padding: 3em 4em;
 }
 
 small{
@@ -32,4 +32,10 @@ small{
     color: red;
     font-style: italic;
     font-weight: bold;
+}
+
+.ventana{
+    background: rgba(240, 200, 240, .5);
+    border: 1px solid black;
+    padding: .5em;
 }
