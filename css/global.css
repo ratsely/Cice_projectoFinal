@@ -3,6 +3,22 @@
     padding: 0;
 }
 
-nav a{
+a{
+    text-decoration: none;
     color: white;
+}
+
+nav a{
+    padding: 1em;
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    height: 15em;
+    background: url("../assets/img/pizza.jpeg") fixed center no-repeat;
+    background-size: cover;
 }
