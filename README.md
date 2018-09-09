@@ -8,7 +8,9 @@ La primera pantalla es un login, en la cual si se accede correctamente permite v
 
 ### ¿Qué está hecho?
 
-De momento sólo es accesible la pantalla de acceso. Es completamente funcional. Sin embargo hasta el momento no permite redireccionar a ninguna página web.
+La pantalla de login (que será el index.html al acabar de probar cada pagina por separado) permite el acceso a Registro, ambos completamente funcionales y adaptativos a diferentes pantallas. Si se emplea el mismo usuario y contraseña se accede a Home y a Contáctanos. Sin embargo, ambos son prototipos web y pueden cambiar su disposición en las próximas actualizaciones. 
+
+Se ha añadido del mismo modo dos versiones de las funciones de Javascript -en versión JS y Jquery- para su posterior evaluación, a pesar de que se priorizará en el uso de Javascript original antes que su librería.
 
 ### Lista de Tareas
 
