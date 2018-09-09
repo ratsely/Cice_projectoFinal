@@ -28,9 +28,8 @@ small{
     display: none;
 }
 
-#error{
-    color: red;
-    font-style: italic;
+#error, #errorMail{
+    /* color: red; */
     font-weight: bold;
 }
 
