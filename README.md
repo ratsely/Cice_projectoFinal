@@ -12,8 +12,6 @@ De momento sólo es accesible la pantalla de acceso. Es completamente funcional.
 
 ### Lista de Tareas
 
-- Crear página web de registro
-- Crear la página principal
 - Añadir elemento anexos procedentes de APIS
 - Crear el catálogo y ficha de productos con Angular
 - Mejorar la accesibilidad globalmente: elementos ARIA, reducción de imagenes
