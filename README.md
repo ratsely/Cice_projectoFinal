@@ -12,7 +12,6 @@ De momento sólo es accesible la pantalla de acceso. Es completamente funcional.
 
 ### Lista de Tareas
 
-- Crear la página principal
-- Añadir elemento anexos procedentes de APIS
+- Añadir lista de alimentos a través de un Json externo 
 - Crear el catálogo y ficha de productos con Angular 6
 - Mejorar la accesibilidad globalmente: elementos ARIA, reducción de imagenes
