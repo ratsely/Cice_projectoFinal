@@ -1,4 +1,4 @@
-#entrantes img{
-    width: 250px;
+#entrantes img, #pizza img, #postre img{
+    width: 200px;
     max-width: 100%;
 }

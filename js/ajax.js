@@ -1,6 +1,18 @@
-https://fpaniaguaformacion.github.io/datos_proyecto_final.json
+window.addEventListener("load", cargarJSON('https://fpaniaguaformacion.github.io/datos_proyecto_final.json'));
+window.addEventListener("load", seleccionarBoton);
 
-document.body.onload = cargarJSON('https://fpaniaguaformacion.github.io/datos_proyecto_final.json');
+document.querySelector("#cesta").onclick = comprar;
+
+function seleccionarBoton(){
+    let botones = document.querySelectorAll('button');
+    for (i = 0; i < botones.length; i++){
+        botones[i].addEventListener('click', darPrecio);
+    }
+}
+
+function darPrecio(){
+    console.log("Funciona");
+}
 
 function cargarJSON(url) {
     let xhttp = new XMLHttpRequest();
@@ -32,11 +44,11 @@ function gestionarRespuesta(platos){
 
     rutaEntrante = document.querySelector("#entrantes");
     rutaPizza = document.querySelector("#pizza");
-    crearContenido(listaEntrantes, rutaEntrante)
-    crearContenido(listaPizzas, rutaPizza)
+    rutaPostre = document.querySelector("#postre");
+    crearContenido(listaEntrantes, rutaEntrante);
+    crearContenido(listaPizzas, rutaPizza);
+    crearContenido(listaPostres, rutaPostre);
 }
-
-
 
 function parsearListaArrays(plato, lista){
     plato.forEach(menu => {
@@ -49,8 +61,11 @@ function crearContenido(categoria, ruta){
     categoria.forEach( element => {
         let div = document.createElement("div");
         div.innerHTML = element.crearHTML();
-        div.classList.add("col-12", "col-lg-3", "my-4",  "mx-4");
-        ruta.appendChild(div)
+        div.classList.add("col-12", "col-md-4", "col-lg-3", "my-3",  "mx-2");
+        ruta.appendChild(div);
     });
 }
 
+function comprar(){
+    
+}
