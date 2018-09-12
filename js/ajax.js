@@ -1,5 +1,3 @@
-https://fpaniaguaformacion.github.io/datos_proyecto_final.json
-
 document.body.onload = cargarJSON('https://fpaniaguaformacion.github.io/datos_proyecto_final.json');
 
 function cargarJSON(url) {
@@ -32,8 +30,10 @@ function gestionarRespuesta(platos){
 
     rutaEntrante = document.querySelector("#entrantes");
     rutaPizza = document.querySelector("#pizza");
+    rutaPostre = document.querySelector("#postres");
     crearContenido(listaEntrantes, rutaEntrante)
     crearContenido(listaPizzas, rutaPizza)
+    crearContenido(listaPostres, rutaPostre)
 }
 
 
