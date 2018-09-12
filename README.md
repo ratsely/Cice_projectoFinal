@@ -8,12 +8,15 @@ La primera pantalla es un login, en la cual si se accede correctamente permite v
 
 ### ¿Qué está hecho?
 
-La pantalla de login (que será el index.html al acabar de probar cada pagina por separado) permite el acceso a Registro, ambos completamente funcionales y adaptativos a diferentes pantallas. Si se emplea el mismo usuario y contraseña se accede a Home y a Contáctanos. Sin embargo, ambos son prototipos web y pueden cambiar su disposición en las próximas actualizaciones. 
+La pantalla de login (que será el index.html al acabar de probar cada pagina por separado) permite el acceso a Registro, ambos completamente funcionales y adaptativos a diferentes pantallas. Si se emplea el mismo usuario y contraseña se accede a Home y a Contáctanos. En Pedidos está añadida la funcionalidad (no integrada aún) de añadir elementos básicos a la lista de la compra.
+
+Productos está realizado en Angular pero no integrado todavía, en el que se puede acceder a la lista pormenorizada de cada ficha.
 
 Se ha añadido del mismo modo dos versiones de las funciones de Javascript -en versión JS y Jquery- para su posterior evaluación, a pesar de que se priorizará en el uso de Javascript original antes que su librería.
 
 ### Lista de Tareas
 
-- Añadir lista de alimentos a través de un Json externo 
-- Crear el catálogo y ficha de productos con Angular 6
+- Poner completa funcionalidad a la Cesta de la compra.
+-Integrar web de Angular con la web principal
 - Mejorar la accesibilidad globalmente: elementos ARIA, reducción de imagenes
+-Crear lista de error en caso de que el servidor no funcione
