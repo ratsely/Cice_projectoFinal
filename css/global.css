@@ -17,12 +17,10 @@ nav a:hover, footer a:hover{
     text-decoration: none;
 }
 
-header{
-    height: 12em;
-    background: url("../assets/img/pizza.jpeg") fixed center no-repeat;
-    background-size: cover;
+nav img{
+ max-width: 100%;
+ width: 200px;
 }
-
 main a{
     padding: .5em;
     color: black;
@@ -35,6 +33,10 @@ main a:hover{
 
 main i{
     font-size: 2em;
+}
+
+footer i{
+    font-size: 1.2em;
 }
 
 img{
@@ -51,4 +53,8 @@ img{
 
 .borde{
     border: 5px solid white;
+}
+
+#entrantes, #pizza, #postres{
+    background: whitesmoke
 }
