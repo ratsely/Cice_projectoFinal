@@ -31,9 +31,9 @@ function gestionarRespuesta(platos){
     rutaEntrante = document.querySelector("#entrantes");
     rutaPizza = document.querySelector("#pizza");
     rutaPostre = document.querySelector("#postres");
-    crearContenido(listaEntrantes, rutaEntrante)
-    crearContenido(listaPizzas, rutaPizza)
-    crearContenido(listaPostres, rutaPostre)
+    crearContenido(listaEntrantes, rutaEntrante);
+    crearContenido(listaPizzas, rutaPizza);
+    crearContenido(listaPostres, rutaPostre);
 }
 
 
@@ -50,7 +50,19 @@ function crearContenido(categoria, ruta){
         let div = document.createElement("div");
         div.innerHTML = element.crearHTML();
         div.classList.add("col-12", "col-lg-3", "my-4",  "mx-4");
-        ruta.appendChild(div)
+        let nuevoInput = document.createElement("button");
+			nuevoInput.classList.add("btn","btn-success", "my-2");
+            nuevoInput.setAttribute("value","comprar");
+            nuevoInput.innerHTML = "Poner en la cesta";
+            nuevoInput.setAttribute("onclick","comprar(\""+element.Nombre+"\", \""+element.Precio+"\")");
+        ruta.appendChild(div);
+        div.appendChild(nuevoInput);
     });
+}
+
+function comprar(producto, precio){
+    let cesta = [];
+    cesta.push(producto + " de " + precio);
+    console.log(cesta);
 }
 

@@ -1,126 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/pedido.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/pedido.css">
-</head>
-
-<body>
-    <nav class="container-fluid bg-dark text-white">
-        <div class="row">
-          <div class="col-12 p-3 text-center">
-                <a href="../home.html"><img src="./assets/img/logo.png" alt="Logo enlace a Home" class="img-fluid"></a>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-                <a href="./home.html">Home</a>
-                <a class="mx-5" href="./contacto.html">Contacto</a>
-                <a href="#">Productos</a>
-              </div>
-            </div>
-      </nav>
-
-    <main>
-        <div class="container">
+    <body>
+        <nav class="container-fluid bg-dark text-white">
             <div class="row">
-                <!-- Columna izquierda -->
-                <div class="col-12 col-md-8">
+                <div class="col-12 p-3 text-center">
+                    <a href="../home.html"><img src="./assets/img/logo.png" alt="Logo enlace a Home" class="img-fluid"></a>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <a href="./home.html">Home</a>
+                    <a class="mx-5" href="./contacto.html">Contacto</a>
+                    <a href="#">Productos</a>
+                </div>
+            </div>
+        </nav>
 
-                    <div class="col-12">  
-                        <h1 class="py-3 text-center">Entrantes</h1>
-                    </div>
-                    <div id="entrantes" class="row align-items-center">
-                    </div>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <!-- Columna izquierda -->
+                    <div class="col-12 col-md-8">
 
-                    
+                        <div class="col-12">
+                            <h1 class="py-3 text-center">Entrantes</h1>
+                        </div>
+                        <div id="entrantes" class="row align-items-center">
+                        </div>
+
+
                         <h1 class="py4 text-center my-5">
                             Pizza
                         </h1>
 
-                    <div id="pizza" class="row align-items-center">
+                        <div id="pizza" class="row align-items-center">
+                        </div>
+
+                        <h1 class="py4 text-center my-5">
+                            Postres
+                        </h1>
+
+                        <div id="postres" class="row align-items-center">
+                        </div>
+                    </div>
+                    <!-- Columna derecha -->
+                    <div class="col-12 col-md-4">
+                        <p>Lista de la compra</p>
+                    </div>
                 </div>
-
-                <h1 class="py4 text-center my-5">
-                        Postres
-                    </h1>
-
-                <div id="postres" class="row align-items-center">
             </div>
+        </main>
+        <footer class="page-footer font-small pt-4 bg-dark text-white">
+
+            <div class="container-fluid text-center text-md-left">
+
+                <div class="row">
+
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold text-center">Contacto</h5>
+                        <p class="text-center">Calle Ciudad Rodrigo, 21, 28012 Madrid</p>
+                        <p class="text-center">+34 900 803 711</p>
+                        <div class="col-12 text-center py-2">
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-3">
+                        <h5 class="text-uppercase font-weight-bold"></h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis
+                            modi earum commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos
+                            ipsam, aspernatur id excepturi hic.</p>
+                    </div>
                 </div>
-                <!-- Columna derecha -->
-                <div class="col-12 col-md-4">
-                    <p>Lista de la compra</p>
-                </div>
             </div>
-        </div>
-    </main>
+        </footer>
 
-    <!-- <footer class="bg-dark text-white py-2">
-        <div class="row">
-            <div class="col-12">
-            <div>
-                <span>Tel: 902 84523128</span>
-            </div>
-        </div>
-            <div>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter mx-2"></i></a>
-                <a href="#"><i class="fab fa-facebook-f mx-2"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div>
-                <a href="./contacto.html">Contacto</a>
-            </div>
-        </div>
-    </footer> -->
-
-    <!-- Footer -->
-<footer class="page-footer font-small pt-4 bg-dark text-white">
-
-        <div class="container-fluid text-center text-md-left">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="./js/claseMenu.js"></script>
+        <script src="./js/ajax.js"></script>
     
-          <div class="row">
-    
-            <div class="col-md-6 mt-md-0 mt-3">
-              <h5 class="text-uppercase font-weight-bold text-center">Contacto</h5>
-              <p class="text-center">Calle Ciudad Rodrigo, 21, 28012 Madrid</p>
-              <p class="text-center">+34 900 803 711</p>
-              <div class="col-12 text-center py-2">
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            </div>
-    
-            <!-- Grid column -->
-            <div class="col-md-6 mb-md-0 mb-3">
-    
-              <!-- Content -->
-              <h5 class="text-uppercase font-weight-bold"></h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id excepturi hic.</p>
-    
-            </div>
-            <!-- Grid column -->
-    
-          </div>
-          <!-- Grid row -->
-    
-        </div>
-    
-      </footer>
-      <!-- Footer -->
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="./js/claseMenu.js"></script>
-<script src="./js/ajax.js"></script>
-
+    </body>
 </html>
