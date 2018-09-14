@@ -15,8 +15,6 @@ Productos está realizado en Angular pero no integrado todavía, en el que se pu
 Se ha añadido del mismo modo dos versiones de las funciones de Javascript -en versión JS y Jquery- para su posterior evaluación, a pesar de que se priorizará en el uso de Javascript original antes que su librería.
 
 ### Lista de Tareas
-
-- Poner completa funcionalidad a la Cesta de la compra.
--Integrar web de Angular con la web principal
+-Integrar web de Angular con la web principal (Enlace no funcional)
 - Mejorar la accesibilidad globalmente: elementos ARIA, reducción de imagenes
 -Crear lista de error en caso de que el servidor no funcione
