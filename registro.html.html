@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro</title>
+    <link rel="preload" href="css/login.css" as="style">
+    <link rel="preload" href="js/registro.js" as="script">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <form class="mx-auto my-auto border" name="registro">
+                <fieldset class="mt-2">
+                    <legend>Datos de Registro</legend>
+                    <div class="form-group my-3">
+                            <label>Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group my-3">
+                                <label>Contraseña</label>
+                                <input type="password" class="form-control" id="password" required>
+                                <input type="checkbox" id="bot-rad" class="mt-4 mx-3">Mostrar contraseña
+                            </div>
+                </fieldset>
+                <fieldset>
+                        <legend class="pt-4">Datos personales</legend>
+                    </fieldset>
+                    <div class="form-group my-4">
+                        <label class="d-flex justify-content-between"> <span>Nombre</span>  <span>(Obligatorio)</span> </label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="form-group my-4">
+                            <label class="d-flex justify-content-between"> <span>Apellidos</span>  <span>(Obligatorio)</span> </label>
+                        <input type="text" class="form-control" id="apellidos" required>
+                    </div>
+                    <div class="form-group my-4">
+                            <label class="d-flex justify-content-between"> <span>Año de nacimiento</span>  <span>(Obligatorio)</span> </label>
+                        <input type="date" class="form-control" id="edad" required>
+                    </div>
+                    <div class="form-group my-4">
+                            <label class="d-flex justify-content-between pb-3"> <span>Género:</label>
+                        <div>
+                        <div class="form-check form-check-inline col-12 col-sm-3">
+                            <input class="form-check-input" type="radio" name="hombre" id="hombre" value="hombre">
+                            <label class="form-check-label">Hombre</label>
+                        </div>
+                        <div class="form-check form-check-inline col-12 col-sm-3">
+                            <input class="form-check-input" type="radio" name="mujer" id="mujer" value="mujer">
+                            <label class="form-check-label">Mujer</label>
+                        </div>
+                        <div class="form-check form-check-inline col-12 col-sm-3">
+                            <input class="form-check-input" type="radio" name="otros" id="otro" value="otro">
+                            <label class="form-check-label">Otro</label>
+                        </div>
+                    </div>
+                    <fieldset>
+                            <legend class="pt-5">Datos de contacto</legend>
+                        </fieldset>
+                        <div class="form-group mt-4">
+                            <label> Número de teléfono </label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                </div>
+                <div id="fallo" class="ventana mb-5 ocultar col-12">
+                    </div>
+                <div id="exito" class="ventana mb-5 ocultar col-12">
+                </div>
+                <input type="button" id="registro" class="btn btn-primary mx-auto my-1 d-block" value="Registrarse">
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/registro.js"></script>
+</body>
+
+</html>

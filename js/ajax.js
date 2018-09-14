@@ -60,9 +60,31 @@ function crearContenido(categoria, ruta){
     });
 }
 
+// Lista de la compra
+
+let cesta = [];    
+let precioTotal = 0;
 function comprar(producto, precio){
-    let cesta = [];
-    cesta.push(producto + " de " + precio);
-    console.log(cesta);
+    cesta.push(producto + " de " + precio + "€");
+    precioTotal = precioTotal + Number(precio);
+    
+    let listaProductos = document.createElement("div");     
+    cesta.forEach(producto => {
+
+        listaProductos.textContent = producto;
+        document.querySelector("#listaCompra").appendChild(listaProductos);
+    });
+    document.querySelector("#Precio").textContent = precioTotal + "€";
 }
 
+function verCompra(){
+    document.querySelector("#listaCompra").classList.toggle("ocultar");
+    document.querySelector("#Precio").classList.toggle("ocultar");
+    document.querySelector("#btn-comprar").classList.toggle("ocultar");
+}
+
+// Botones de menu
+
+function verMenu(menu){
+    document.querySelector(menu).classList.toggle("ocultar");
+}

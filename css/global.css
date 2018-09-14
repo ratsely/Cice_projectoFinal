@@ -39,6 +39,10 @@ footer i{
     font-size: 1.2em;
 }
 
+footer hr{
+    color:white;
+}
+
 img{
     max-width: 100%;
 }
@@ -57,4 +61,22 @@ img{
 
 #entrantes, #pizza, #postres{
     background: whitesmoke
+}
+
+.carrito{
+    width: 200px;
+}
+
+#listaCompra{
+    font-size: 1.2em;
+}
+
+#Precio{
+    font-weight: bold;
+    font-size: 2em;
+    color:red;
+}
+
+.ocultar{
+    display:none;
 }
